@@ -204,7 +204,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItemCadMedicoActionPerformed
 
     private void jMenuItemSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSairActionPerformed
-        conexao.desconecta();
         System.exit(0);
     }//GEN-LAST:event_jMenuItemSairActionPerformed
 
