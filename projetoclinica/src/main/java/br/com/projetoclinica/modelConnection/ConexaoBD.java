@@ -29,7 +29,6 @@ public class ConexaoBD {
         try {
             con=DriverManager.getConnection(URL, USER, PASS);
             
-            JOptionPane.showMessageDialog(null, "Conexão com sucesso!");
         } catch (SQLException ex) {
            JOptionPane.showMessageDialog(null, "Conexao sem sucesso! \n"+ex.getMessage());
         }
@@ -39,7 +38,7 @@ public class ConexaoBD {
     public void desconecta(){
         try {
            con.close();
-            JOptionPane.showMessageDialog(null, "BD Desconectado com sucesso");
+            
         } catch (SQLException ex) {
             showMessageDialog(null, "Erro ao desconectar o Banco de Dados: \n"+ ex.getMessage());
         }
